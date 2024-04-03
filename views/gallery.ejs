@@ -1,0 +1,9 @@
+<h1><%= title %></h1>
+<div class="gallery row">
+    <% imagePaths.forEach(imagePath => { %>
+        <div class="artwork col-md-3 mt-3 mb-3">
+            <img src="<%= imagePath %>" alt="Artwork Image" class="art img-fluid">
+        </div>
+    <% }); %>
+</div>
+

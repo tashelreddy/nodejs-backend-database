@@ -1,0 +1,48 @@
+
+    <!-- upcoming events -->
+    <h1><%= title %></h1>
+    <div class="upcoming-events text-center">
+        <% exhibitionData.upcomingEvents.forEach(event => { %>
+            <div class="event">
+                <h2><%= event.title %></h2>
+                <p>Date: <%= event.date %></p>
+                <p>Location: <%= event.location %></p>
+            </div>
+        <% }); %>
+    </div>
+
+    <% title = "Exhibition" %>
+
+    <div class="container mt-4">
+        <h1>Exhibition</h1>
+        <div class="row">
+            <!-- Exhibition Cards -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="/images/image1.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Celestial Reverie</h5>
+                        <p class="card-text">Cosmic, ethereal, contemplative</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="/images/image2.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ethereal Whispers</h5>
+                        <p class="card-text">Serene, delicate, dream-like</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="/images/image3.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mystic Symphony</h5>
+                        <p class="card-text">Enigmatic, harmonious, transcendent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
